@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+
 /**
  *
  * @author hcadavid
@@ -38,6 +39,7 @@ public class HostBlackListsValidator {
         HostBlacklistsDataSourceFacade skds=HostBlacklistsDataSourceFacade.getInstance();
         
         int checkedListsCount=0;
+        
         
         for (int i=0;i<skds.getRegisteredServersCount() && ocurrencesCount<BLACK_LIST_ALARM_COUNT;i++){
             checkedListsCount++;
@@ -68,3 +70,4 @@ public class HostBlackListsValidator {
     
     
 }
+
